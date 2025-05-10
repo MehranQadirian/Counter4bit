@@ -44,6 +44,7 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
@@ -53,10 +54,15 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1746823922" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1746823922">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1746823922" xil_pn:in_ck="-3397583999991728985" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1746823922">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Tb.v"/>
       <outfile xil_pn:name="counter_simple.v"/>
     </transform>
@@ -75,13 +81,22 @@
     <transform xil_pn:end_ts="1746823922" xil_pn:in_ck="-3397583999991728985" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1746823922">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Tb.v"/>
       <outfile xil_pn:name="counter_simple.v"/>
     </transform>
     <transform xil_pn:end_ts="1746823927" xil_pn:in_ck="-3397583999991728985" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="134373692233437609" xil_pn:start_ts="1746823922">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Tb_beh.prj"/>
       <outfile xil_pn:name="Tb_isim_beh.exe"/>
@@ -89,16 +104,20 @@
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1746823927" xil_pn:in_ck="4263348730504817413" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1151765187303986644" xil_pn:start_ts="1746823927">
+    <transform xil_pn:end_ts="1746827500" xil_pn:in_ck="4263348730504817413" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1151765187303986644" xil_pn:start_ts="1746827499">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1746823787" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1746823786">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1746823787" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5826797474876777323" xil_pn:start_ts="1746823787">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -128,6 +147,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Tb.lso"/>
       <outfile xil_pn:name="Tb.ngc"/>
       <outfile xil_pn:name="Tb.ngr"/>
@@ -148,6 +169,7 @@
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Tb.bld"/>
       <outfile xil_pn:name="Tb_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
